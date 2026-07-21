@@ -6,10 +6,7 @@ class TaskAutomation:
 
     def __init__(self):
         self.menu = Menu()
-        self.file_manager = FileManager(
-            "images/source",
-            "images/destination"
-        )
+        self.file_manager = FileManager()
 
     def run(self):
 
@@ -23,12 +20,15 @@ class TaskAutomation:
 
             elif choice == 2:
                 print("\n📧 Email Extractor Selected")
+                # Email Extractor will be implemented here
 
             elif choice == 3:
                 print("\n🌐 Webpage Scraper Selected")
+                # Web Scraper will be implemented here
 
             elif choice == 4:
                 print("\n👋 Exiting Program...")
+                print("Thank you for using Python Task Automation!")
                 break
 
 
